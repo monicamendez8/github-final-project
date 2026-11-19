@@ -1,0 +1,15 @@
+# Calculadora de interés simple
+
+capital = float(input("Ingrese el capital: "))
+tasa = float(input("Ingrese la tasa de interés anual (%): "))
+tiempo = float(input("Ingrese el tiempo (años): "))
+
+# Fórmula del interés simple
+interes = (capital * tasa * tiempo) / 100
+
+# Monto total
+monto_total = capital + interes
+
+print("\n--- Resultado ---")
+print(f"Interés generado: {interes:.2f}")
+print(f"Monto total: {monto_total:.2f}")
